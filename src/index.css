@@ -29,7 +29,51 @@ html{
 body{
    color: #000000; 
    font-family: 'Poppins', sans-serif;
-   background: var(--color-burgerText);
+   background: white;
    color: var(--color-text);
    line-height: 1.7;
+}
+
+.A::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background: var( --color-grey);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.A {
+  width: 50%;
+  height: 30%;
+  display: inline-block;
+  position: relative;
+  top: 10%;
+  left: 20%;
+}
+
+.B {
+  width: 20%;
+  height: 30%;
+  position: absolute;
+  display: inline-block;
+  left: calc(20% + 30%);
+  /* just for demo */
+  top: 10%;
+}
+
+.A::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: -100vh;
+  left: 100%;
+  width: 100vw;
+  height: 200vh;
+  background: var(--color-lime);
 }
