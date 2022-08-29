@@ -1,16 +1,18 @@
-import React from 'react'
-import header from './components/Header/header'
-import landingPage from './components/Landing/landingPage'
-import about from './components/About/about'
-import workExperience from './components/Experience/workExperience'
-import navbar from './components/Navbar/navbar'
+import React from "react";
+import LandingPage from "./components/landing/LandingPage";
+import About from "./components/about/About";
+import WorkExperience from "./components/experience/WorkExperience";
+import Navbar from "./components/navbar/Navbar";
 
 const App = () => {
   return (
     <>
-        <navbar />
+      <Navbar />
+      <LandingPage />
+      <About />
+      <WorkExperience />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

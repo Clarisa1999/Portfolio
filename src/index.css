@@ -1,79 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-
-*{
-    margin: 0;
-    padding:0;
-    border:0;
-    outline: 0;
-    box-sizing: 0;
-    list-style: 0;
-    text-decoration: 0;
-}
-
-:root{
-    --color-lime: #62EB31;
-    --color-grey: #E4F2F4 ;
-    --color-text: #4F4F4F;
-    --color-burgerText: #AAC1C4;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-::-webkit-scrollbar{
-    display: grid;
-}
-
-body{
-   color: #000000; 
-   font-family: 'Poppins', sans-serif;
-   background: white;
-   color: var(--color-text);
-   line-height: 1.7;
-}
-
-.A::after {
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  box-sizing: 0;
+  list-style: 0;
+  text-decoration: 0;
 }
 
-.container {
-  background: var( --color-grey);
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
+:root {
+  --color-lime: #62eb31;
+  --color-grey: #e4f2f4;
+  --color-text: #4f4f4f;
+  --color-burgerText: #aac1c4;
 }
 
-.A {
-  width: 50%;
-  height: 30%;
-  display: inline-block;
-  position: relative;
-  top: 10%;
-  left: 20%;
-}
-
-.B {
-  width: 20%;
-  height: 30%;
-  position: absolute;
-  display: inline-block;
-  left: calc(20% + 30%);
-  /* just for demo */
-  top: 10%;
-}
-
-.A::after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  top: -100vh;
-  left: 100%;
-  width: 100vw;
-  height: 200vh;
-  background: var(--color-lime);
+::-webkit-scrollbar {
+  display: grid;
 }
