@@ -1,10 +1,41 @@
-import React from 'react'
-import './about.css'
+import React from "react";
+import "./about.css";
 
-const about = () => {
+const About = () => {
   return (
-    <div>about</div>
-  )
-}
+    <div id="about">
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+    </div>
+  );
+};
 
-export default about
+export default About;
