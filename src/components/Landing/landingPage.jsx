@@ -1,4 +1,6 @@
 import React from "react";
+import { Typography, AppBar } from "@material-ui/core";
+
 import "./landingPage.css";
 import myImage from "../../media-files/myImage.JPG";
 
