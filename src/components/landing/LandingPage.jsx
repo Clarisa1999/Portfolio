@@ -1,7 +1,6 @@
-import React from 'react';
-
-import './landingPage.css';
-import myImage from '../../media-files/myImage.JPG';
+import React from "react";
+import "./landingPage.css";
+import myImage from "../../media-files/myImage.JPG";
 
 const landingPage = () => {
   return (

@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import { menuItems } from './menuItems';
-import './navbar.css';
+import React, { Component } from "react";
+import { menuItems } from "./menuItems";
+import "./navbar.css";
 
 class Navbar extends Component {
   render() {
     return (
       <div className="NavbarItems">
-        <div id="logo">Rue</div>
+        <div id="logo" />
         <div id="items">
           {menuItems.map((item, index) => {
             return (
