@@ -1,7 +1,26 @@
-#about {
+.about {
   color: #000000;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background: var(--color-lime);
   color: var(--color-text);
   line-height: 1.7;
+}
+
+#rightSide {
+  display: flex;
+  margin-right: 600px;
+}
+
+#firstHeading {
+  margin-top: 200px;
+  color: var(--color-text);
+}
+
+#leftSide {
+  margin-top: 200px;
+  margin-left: 600px;
+}
+
+#secondHeading {
+  color: var(--color-text);
 }
