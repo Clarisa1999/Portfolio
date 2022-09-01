@@ -4,6 +4,25 @@ import "./workExperience.css";
 const workExperience = () => {
   return (
     <div id="workExperience">
+      {/* 
+
+*/}
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <br></br>
       <br></br>
       <br></br>
