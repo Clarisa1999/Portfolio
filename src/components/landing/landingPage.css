@@ -1,11 +1,7 @@
 #landing {
   color: #000000;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(
-    90deg,
-    var(--color-grey) 70%,
-    var(--color-lime) 30%
-  );
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(90deg, var(--color-grey) 70%, var(--color-lime) 30%);
   color: var(--color-text);
   line-height: 1.7;
 }
@@ -35,7 +31,7 @@
 
 #developer {
   display: flex;
-  margin-top: 120px;
+  margin-top: 90px;
   margin-left: 50px;
   font-size: 40px;
   font-family: Inter;
@@ -43,7 +39,7 @@
 
 #passion {
   display: flex;
-  margin-top: 30px;
+  margin-top: -100px;
   margin-left: 50px;
   font-family: Inter;
   font-size: 30px;
@@ -57,5 +53,50 @@
 
 #image {
   border-radius: 30%;
-  margin-left: 28%;
+  /* margin-left: 28%; */
+  margin-left: 15%;
+}
+
+.icons {
+  display: flex;
+  /* margin-left: 1500px; */
+  justify-content: flex-end;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+#empty {
+  flex: 0.8;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+}
+
+#iconsContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+#sayHello {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#hello {
+  margin-left: 100px;
+  color: var(--color-grey);
+  font-family: Ramabhadra;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+#email {
+  display: flex;
+  color: #000000;
+  margin-bottom: 30px;
+  font-family: Poppins;
+  font-weight: 100;
 }
