@@ -1,7 +1,17 @@
-#workExperience {
+.workExperience {
   color: #000000;
   font-family: "Poppins", sans-serif;
   background: var(--color-grey);
   color: var(--color-text);
   line-height: 1.7;
+}
+
+#backrgound {
+  height: 50;
+  width: 20;
+}
+
+.companies {
+  display: flex;
+  margin-top: 200px;
 }
