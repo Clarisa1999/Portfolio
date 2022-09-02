@@ -59,7 +59,7 @@ const App = () => {
   const globalTheme = theme === "light" ? lightTheme : darkTheme;
   return (
     <ThemeProvider theme={globalTheme}>
-      <Navbar setThme={setTheme} theme={theme} />
+      <Navbar setTheme={setTheme} theme={theme} />
       <LandingPage />
       <About />
       <WorkExperience />
