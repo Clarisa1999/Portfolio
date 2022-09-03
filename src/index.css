@@ -17,7 +17,3 @@
   --color-burgerText: #aac1c4;
   --color-exp: #ecfdff;
 }
-
-::-webkit-scrollbar {
-  display: grid;
-}

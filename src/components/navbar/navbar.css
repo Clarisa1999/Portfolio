@@ -1,40 +1,6 @@
-.NavbarItems {
-  display: flex;
-  flex-direction: row;
-  position: fixed;
-  width: 100%;
-  background-color: transparent;
-}
-
-.nav-links {
-  color: black;
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 20px;
-  margin-top: 15px;
-  margin-right: 40px;
-  padding: 14px 16px;
-}
-
-.NavbarItems a:hover {
-  color: var(--color-text);
-  font-weight: 400;
-}
-
-#logo {
-  color: black;
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 20px;
-  margin-top: 15px;
-  padding: 14px 16px;
-  margin-right: 200px;
-  flex: 0.5;
-}
-
 #items {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 14px 16px;
+  justify-content: flex-end;
+  margin-top: 15px;
 }
