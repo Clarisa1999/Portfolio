@@ -3,7 +3,7 @@ import { menuItems } from "./menuItems";
 import "./navbar.css";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
-import { IconButton } from "@mui/material";
+import { IconButton, Link, Typography, AppBar, Toolbar } from "@mui/material";
 
 const Navbar = (props) => {
   const { theme, setTheme } = props;
@@ -13,29 +13,59 @@ const Navbar = (props) => {
   };
 
   const ModeIcon = ({ theme }) => {
-    return theme === "light" ? (
-      <LightModeIcon color="secondary" />
-    ) : (
-      <DarkModeIcon color="secondary" />
+    const icon =
+      theme === "light" ? (
+        <LightModeIcon color="secondary" />
+      ) : (
+        <DarkModeIcon color="secondary" />
+      );
+    return (
+      <IconButton
+        color="secondary"
+        onClick={toggleTheme}
+        sx={{ marginLeft: 2, marginRight: 2, marginTop: -0.5 }}
+      >
+        {icon}
+      </IconButton>
     );
   };
 
   return (
-    <div className="NavbarItems">
-      <div id="logo" />
+    <AppBar
+      position="sticky"
+      enableColorOnDark={true}
+      elevation={0}
+      sx={{
+        backgroundColor: (theme) =>
+          theme.palette.mode === "light"
+            ? theme.palette.background.paper
+            : theme.palette.background.default,
+      }}
+    >
       <div id="items">
         {menuItems.map((item, index) => {
           return (
-            <a key={index} className={item.cName} href={item.url}>
-              {item.title}
-            </a>
+            <Link
+              key={index}
+              className={item.cName}
+              href={item.url}
+              color="inherit"
+              underline="none"
+            >
+              <Typography
+                color="primary"
+                sx={{ marginRight: 6, marginLeft: 6 }}
+                variant="h5"
+              >
+                {item.title}
+              </Typography>
+            </Link>
           );
         })}
-      </div>
-      <IconButton color="primary" onClick={toggleTheme}>
+
         <ModeIcon theme={theme} />
-      </IconButton>
-    </div>
+      </div>
+    </AppBar>
   );
 };
 
