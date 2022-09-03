@@ -24,7 +24,7 @@ const landingPage = () => {
         <div id="empty"></div>
         <div className="rightSide">
           <div id="sayHello">
-            <h3 id="hello"> Say Hesllo</h3>
+            <h3 id="hello"> Say Hello</h3>
             <h3 id="email"> rufaro.gapare@mail.mcgill.ca</h3>
           </div>
           <div id="iconsContainer">

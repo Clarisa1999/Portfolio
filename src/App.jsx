@@ -24,11 +24,11 @@ const lightTheme = createTheme({
       main: "#e4f2f4",
     },
     background: {
-      paper: "white",
+      paper: "#ecfdff",
       default: "#EEEEEE",
     },
     text: {
-      primary: "#000",
+      primary: "#4f4f4f",
     },
   },
 });
