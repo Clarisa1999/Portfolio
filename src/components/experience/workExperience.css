@@ -5,13 +5,3 @@
   color: var(--color-text);
   line-height: 1.7;
 }
-
-#backrgound {
-  height: 50;
-  width: 20;
-}
-
-.companies {
-  display: flex;
-  margin-top: 200px;
-}
