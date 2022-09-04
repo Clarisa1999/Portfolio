@@ -15,9 +15,9 @@ const Navbar = (props) => {
   const ModeIcon = ({ theme }) => {
     const icon =
       theme === "light" ? (
-        <LightModeIcon color="secondary" />
+        <DarkModeIcon sx={{ color: "#000" }} />
       ) : (
-        <DarkModeIcon color="secondary" />
+        <LightModeIcon color="secondary" />
       );
     return (
       <IconButton
@@ -38,7 +38,7 @@ const Navbar = (props) => {
       sx={{
         backgroundColor: (theme) =>
           theme.palette.mode === "light"
-            ? theme.palette.background.paper
+            ? theme.palette.background.default
             : theme.palette.background.default,
       }}
     >
@@ -53,9 +53,9 @@ const Navbar = (props) => {
               underline="none"
             >
               <Typography
-                color="primary"
+                color="text"
                 sx={{ marginRight: 6, marginLeft: 6 }}
-                variant="h5"
+                variant="h6"
               >
                 {item.title}
               </Typography>
