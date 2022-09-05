@@ -8,11 +8,17 @@ export default function (props) {
       <Typography
         gutterBottom
         variant="h3"
-        sx={{ fontWeight: "bold", paddingTop: 10, paddingLeft: 10 }}
+        sx={{ paddingTop: 10, paddingLeft: 10 }}
+        color="text.primary"
       >
         {props.heading}
       </Typography>
-      <Typography gutterBottom variant="body2" sx={{ paddingLeft: 10 }}>
+      <Typography
+        gutterBottom
+        variant="body2"
+        color="text.primary"
+        sx={{ paddingLeft: 10 }}
+      >
         {props.body}
       </Typography>
     </Box>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./workExperience.css";
 
-import { CardActionArea, Grid, Typography } from "@mui/material";
+import { Box, CardActionArea, Grid, Typography } from "@mui/material";
 import image from "../../media-files/image.png";
 import microsoft from "../../media-files/microsoft.png";
 import firewox from "../../media-files/firewox.png";
@@ -9,7 +9,14 @@ import Expcard from "../expcard/Expcard";
 
 const workExperience = () => {
   return (
-    <div className="workExperience">
+    <Box
+      sx={{
+        minWidth: "100%",
+        height: "100vh",
+        background: (theme) => theme.palette.background.paper,
+        display: "flex",
+      }}
+    >
       {/* <Typography gutterBottom variant="h3" sx={{ padding: 10 }}>
         Work Experience
       </Typography> */}
@@ -46,11 +53,7 @@ const workExperience = () => {
           />
         </Grid>
       </Grid>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-    </div>
+    </Box>
   );
 };
 

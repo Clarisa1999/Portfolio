@@ -8,61 +8,8 @@
   flex-direction: row;
 }
 
-#name {
-  color: var(--color-lime);
-  margin-left: 10pt;
-  margin-top: 200px;
-  font-family: IBM Plex Mono;
-  font-size: 30px;
-  font-weight: 20;
-}
-
 #image {
   display: flex;
   border-radius: 30%;
   justify-content: flex-end;
-}
-
-.icons {
-  display: flex;
-  /* margin-left: 1500px; */
-  justify-content: flex-end;
-  justify-content: space-around;
-  margin-top: 30px;
-}
-
-#empty {
-  flex: 0.8;
-}
-
-.rightSide {
-  display: flex;
-  flex-direction: column;
-}
-
-#iconsContainer {
-  display: flex;
-  justify-content: space-around;
-}
-
-#sayHello {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-#hello {
-  margin-left: 100px;
-  color: var(--color-grey);
-  font-family: Ramabhadra;
-  font-size: 30px;
-  font-weight: 100;
-}
-
-#email {
-  display: flex;
-  color: #000000;
-  margin-bottom: 30px;
-  font-family: Poppins;
-  font-weight: 100;
 }

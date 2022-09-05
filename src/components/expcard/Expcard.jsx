@@ -19,7 +19,9 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 export default function Expcard(props) {
   return (
     <div>
-      <Card sx={{ maxWidth: 300, backgroundColor: "var(--color-exp)" }}>
+      <Card
+        sx={{ maxWidth: 300, backgroundColor: (theme) => theme.palette.background.paper }}
+      >
         <CardActionArea>
           <CardMedia
             id="backrgound"
