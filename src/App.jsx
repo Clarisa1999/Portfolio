@@ -5,6 +5,7 @@ import WorkExperience from "./components/experience/WorkExperience";
 import Navbar from "./components/navbar/Navbar";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Projects from "./components/projects/Projects";
+import Contact from "./components/contact/Contact";
 
 /*Common Theme configuration for both dark and light mode */
 const commonTheme = {
@@ -31,17 +32,17 @@ const lightTheme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: "#62eb31",
+      main: "#62eb31", //lime
     },
     secondary: {
-      main: "#e4f2f4",
+      main: "#e4f2f4", //background grey
     },
     background: {
-      paper: "#62eb31",
-      default: "#e4f2f4",
+      paper: "#ecfdff", //card grey
+      default: "#e4f2f4", //backgroungd grey
     },
     text: {
-      primary: "#4f4f4f",
+      primary: "#4f4f4f", //text grey
     },
   },
 });
@@ -77,6 +78,7 @@ const App = () => {
       <About />
       <WorkExperience />
       <Projects />
+      <Contact />
     </ThemeProvider>
   );
 };
