@@ -10,6 +10,18 @@ import Projects from "./components/projects/Projects";
 const commonTheme = {
   typography: {
     fontSize: 12,
+    fontFamily: [
+      "-apple-system",
+      "BlinkMacSystemFont",
+      '"Segoe UI"',
+      "Roboto",
+      '"Helvetica Neue"',
+      "Arial",
+      "sans-serif",
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(","),
   },
 };
 
@@ -25,8 +37,8 @@ const lightTheme = createTheme({
       main: "#e4f2f4",
     },
     background: {
-      paper: "#ecfdff",
-      default: "#EEEEEE",
+      paper: "#62eb31",
+      default: "#e4f2f4",
     },
     text: {
       primary: "#4f4f4f",
