@@ -1,7 +1,7 @@
 import React from "react";
 import "./workExperience.css";
 
-import { CardActionArea, Grid } from "@mui/material";
+import { CardActionArea, Grid, Typography } from "@mui/material";
 import image from "../../media-files/image.png";
 import microsoft from "../../media-files/microsoft.png";
 import firewox from "../../media-files/firewox.png";
@@ -10,13 +10,16 @@ import Expcard from "../expcard/Expcard";
 const workExperience = () => {
   return (
     <div className="workExperience">
+      {/* <Typography gutterBottom variant="h3" sx={{ padding: 10 }}>
+        Work Experience
+      </Typography> */}
       <Grid
         container
         direction="row"
         justifyContent="center"
         alignItems="center"
         spacing={6}
-        sx={{ paddingTop: 10 }}
+        sx={{ paddingTop: -20 }}
       >
         <Grid item xs={3}>
           <Expcard
@@ -43,17 +46,6 @@ const workExperience = () => {
           />
         </Grid>
       </Grid>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
       <br></br>
       <br></br>
       <br></br>

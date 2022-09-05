@@ -16,28 +16,7 @@ import ShareIcon from "@mui/icons-material/Share";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 
-interface ExpandMoreProps extends IconButtonProps {
-  expand: boolean;
-}
-
-const ExpandMore = styled((props: ExpandMoreProps) => {
-  const { expand, ...other } = props;
-  return <IconButton {...other} />;
-})(({ theme, expand }) => ({
-  transform: !expand ? "rotate(0deg)" : "rotate(180deg)",
-  marginLeft: "auto",
-  transition: theme.transitions.create("transform", {
-    duration: theme.transitions.duration.shortest,
-  }),
-}));
-
 export default function Expcard(props) {
-  const [expanded, setExpanded] = React.useState(false);
-
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
-
   return (
     <div>
       <Card sx={{ maxWidth: 300, backgroundColor: "var(--color-exp)" }}>
@@ -50,31 +29,21 @@ export default function Expcard(props) {
             alt="green iguana"
           />
           <CardContent>
-            <Typography gutterBottom variant="body2" component="text.secondary">
+            <Typography gutterBottom variant="body2" sx={{ fontWeight: "bold" }}>
               {props.companyName}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              sx={{ fontWeight: "bold" }}
+            >
               {props.heading}
             </Typography>
+            <br></br>
+            <Typography variant="body2" color="text.secondary">
+              {props.experienceBody}
+            </Typography>
           </CardContent>
-
-          <CardActions disableSpacing>
-            <ExpandMore
-              expand={expanded}
-              onClick={handleExpandClick}
-              aria-expanded={expanded}
-              aria-label="show more"
-            >
-              <ExpandMoreIcon />
-            </ExpandMore>
-          </CardActions>
-          <Collapse in={expanded} timeout="auto" unmountOnExit>
-            <CardContent>
-              <Typography variant="body2" color="text.secondary">
-                {props.experienceBody}
-              </Typography>
-            </CardContent>
-          </Collapse>
         </CardActionArea>
       </Card>
     </div>
