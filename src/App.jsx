@@ -4,6 +4,7 @@ import About from "./components/about/About";
 import WorkExperience from "./components/experience/WorkExperience";
 import Navbar from "./components/navbar/Navbar";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import Projects from "./components/projects/Projects";
 
 /*Common Theme configuration for both dark and light mode */
 const commonTheme = {
@@ -75,6 +76,7 @@ const App = () => {
       <LandingPage />
       <About />
       <WorkExperience />
+      <Projects />
     </ThemeProvider>
   );
 };
