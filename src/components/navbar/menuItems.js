@@ -6,20 +6,25 @@ export const menuItems = [
   },
 
   {
-    title: "Work Experience",
-    url: "#",
+    title: "WorkExperience",
+    url: "#experience",
     cName: "nav-links",
   },
 
   {
     title: "Projects",
-    url: "#",
+    url: "#projects",
     cName: "nav-links",
   },
 
   {
-    title: "Download Resume",
-    url: "#",
+    title: "DownloadResume",
+    url: "#download",
+    cName: "nav-links",
+  },
+  {
+    title: "Contact",
+    url: "#contact",
     cName: "nav-links",
   },
 ];

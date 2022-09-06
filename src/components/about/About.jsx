@@ -6,6 +6,8 @@ import { Box, Stack, Typography } from "@mui/material";
 const About = () => {
   return (
     <Box
+      component="div"
+      id="about"
       sx={{
         minWidth: "100%",
         height: "100vh",
@@ -22,11 +24,11 @@ const About = () => {
           currently a senior at McGill University Studying Computer Science and Physics.
         </Typography>
       </Box>
-      <Box sx={{ alignSelf: "flex-end", padding: 40 }}>
+      <Box sx={{ alignSelf: "flex-end", paddingBottom: 20 }}>
         <Typography variant="h3" color="text.primary">
           Things I do
         </Typography>
-        <Typography variant="body2" color="text.primary">
+        <Typography variant="body2" color="text.primary" sx={{ paddingRight: 10 }}>
           Hie my name is Clarisa. I enjoy creating things that live on the internet. I am
           currently a senior at McGill University Studying Computer Science and Physics.
         </Typography>
