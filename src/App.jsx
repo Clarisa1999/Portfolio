@@ -10,7 +10,7 @@ import Contact from "./components/contact/Contact";
 /*Common Theme configuration for both dark and light mode */
 const commonTheme = {
   typography: {
-    fontSize: 12,
+    fontSize: 17,
     fontFamily: [
       "-apple-system",
       "BlinkMacSystemFont",
@@ -43,6 +43,7 @@ const lightTheme = createTheme({
     },
     text: {
       primary: "#4f4f4f", //text grey
+      paper: "#62eb31", //lime
     },
   },
 });

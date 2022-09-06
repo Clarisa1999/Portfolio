@@ -6,6 +6,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 export default function contact() {
   return (
     <Box
+      id="contact"
       sx={{
         minWidth: "100%",
         height: "100vh",
@@ -24,10 +25,10 @@ export default function contact() {
           padding: 20,
         }}
       >
-        <Typography variant="h1" textAlign="center" color="text.primary">
+        <Typography variant="h2" textAlign="center" color="text.primary">
           I'd love to hear from you!
         </Typography>
-        <Typography variant="h2" textAlign="center" color="text.primary">
+        <Typography variant="h5" textAlign="center" color="text.primary">
           Got a project you would like me to work on? How about a friendly chat...
         </Typography>
       </Box>
@@ -50,21 +51,21 @@ export default function contact() {
       >
         <LinkedInIcon
           sx={{
-            color: "blue",
+            color: (theme) => (theme.palette.mode === "light" ? "blue" : "white"),
             display: "inline",
             fontSize: 60,
           }}
         ></LinkedInIcon>
         <GitHub
           sx={{
-            color: "black",
+            color: (theme) => (theme.palette.mode === "light" ? "black" : "white"),
             display: "inline",
             fontSize: 60,
           }}
         ></GitHub>
         <YouTube
           sx={{
-            color: "red",
+            color: (theme) => (theme.palette.mode === "light" ? "red" : "white"),
             display: "inline",
             fontSize: 60,
           }}

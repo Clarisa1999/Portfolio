@@ -1,13 +1,3 @@
-.landing {
-  color: #000000;
-  font-family: "Poppins", sans-serif;
-  background: linear-gradient(90deg, var(--color-grey) 70%, var(--color-lime) 30%);
-  color: var(--color-text);
-  line-height: 1.7;
-  display: flex;
-  flex-direction: row;
-}
-
 #image {
   display: flex;
   border-radius: 30%;
