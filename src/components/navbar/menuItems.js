@@ -1,3 +1,5 @@
+import myImage from "../../media-files/myImage.JPG";
+
 export const menuItems = [
   {
     title: "About Me",
@@ -6,7 +8,7 @@ export const menuItems = [
   },
 
   {
-    title: "WorkExperience",
+    title: "Work Experience",
     url: "#experience",
     cName: "nav-links",
   },
@@ -14,12 +16,6 @@ export const menuItems = [
   {
     title: "Projects",
     url: "#projects",
-    cName: "nav-links",
-  },
-
-  {
-    title: "DownloadResume",
-    url: "#download",
     cName: "nav-links",
   },
   {

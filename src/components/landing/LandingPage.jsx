@@ -6,6 +6,8 @@ import { Box, Stack, Typography } from "@mui/material";
 const LandingPage = () => {
   return (
     <Box
+      component="div"
+      id="landing"
       sx={{
         display: "flex",
         paddingTop: 24,
@@ -20,21 +22,34 @@ const LandingPage = () => {
     >
       <Stack sx={{ paddingTop: 8, paddingLeft: 8, flex: 0.73 }}>
         <Typography variant="h5" color="text.primary">
-          Hie, my name is Rufaro Clarisa Gapare.....
+          Hi there, my name is
         </Typography>
-        <Typography variant="h3" color="text.primary" sx={{ paddingTop: 10 }}>
-          I am a Frontend Developer
+        <Typography
+          variant="h3"
+          color="text.primary"
+          sx={{ paddingTop: 5, fontWeight: "bold" }}
+        >
+          Rufaro Clarisa Gapare
+        </Typography>
+        <Typography
+          variant="h3"
+          sx={{
+            paddingTop: 5,
+            color: (theme) => (theme.palette.mode === "light" ? "#62eb31" : "white"),
+          }}
+        >
+          I am a Front-end Developer....
         </Typography>
         <Typography
           variant="body1"
           color="text.primary"
           fontSize={18}
+          width="74%"
           sx={{ paddingTop: 5 }}
         >
-          I am passionate about crafting scalable frontend products with great
-        </Typography>
-        <Typography variant="body1" color="text.primary" fontSize={18}>
-          user experience that create a positive impact in the community!
+          I am a software engineer passionate about crafting scalable front-end products
+          with great user experience that create a positive impact in the community! I am
+          currently looking for new-grad opportunities.
         </Typography>
       </Stack>
       <Stack>

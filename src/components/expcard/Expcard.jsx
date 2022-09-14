@@ -3,33 +3,23 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
-import { styled } from "@mui/material/styles";
-import CardHeader from "@mui/material/CardHeader";
+import { CardActionArea, List } from "@mui/material";
 import CardActions from "@mui/material/CardActions";
-import Collapse from "@mui/material/Collapse";
-import Avatar from "@mui/material/Avatar";
-import IconButton, { IconButtonProps } from "@mui/material/IconButton";
-import { red } from "@mui/material/colors";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import ShareIcon from "@mui/icons-material/Share";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
+import LaunchIcon from "@mui/icons-material/Launch";
+import ListItem from "@mui/material/ListItem";
 
 export default function Expcard(props) {
   return (
     <div>
       <Card
-        sx={{ maxWidth: 300, backgroundColor: (theme) => theme.palette.background.paper }}
+        sx={{
+          // maxWidth: 300,
+          // height: 500,
+          backgroundColor: (theme) => theme.palette.background.paper,
+        }}
       >
-        <CardActionArea>
-          <CardMedia
-            id="backrgound"
-            component="img"
-            height="180"
-            image={props.image}
-            alt="green iguana"
-          />
+        <CardActionArea sx={{ display: "flex", flexDirection: "column" }}>
+          <CardMedia id="backrgound" component="img" height="150" image={props.image} />
           <CardContent>
             <Typography gutterBottom variant="body2" sx={{ fontWeight: "bold" }}>
               {props.companyName}
@@ -43,9 +33,20 @@ export default function Expcard(props) {
             </Typography>
             <br></br>
             <Typography variant="body2" color="text.secondary">
-              {props.experienceBody}
+              <ListItem sx={{ display: "list-item" }}>{props.pointOne}</ListItem>
+              <ListItem sx={{ display: "list-item" }}>{props.pointTwo}</ListItem>
+              <ListItem sx={{ display: "list-item" }}>{props.pointThree}</ListItem>
+              {/* <ListItem sx={{ display: "list-item" }}>{props.pointFour}</ListItem> */}
             </Typography>
           </CardContent>
+          <LaunchIcon
+            sx={{
+              color: (theme) => (theme.palette.mode === "light" ? "#62eb31" : "white"),
+              alignSelf: "flex-end",
+              // justifyContent: "flex-end",
+              fontSize: 30,
+            }}
+          />
         </CardActionArea>
       </Card>
     </div>
