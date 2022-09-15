@@ -105,10 +105,14 @@ const workExperience = () => {
                   <Typography
                     variant="body2"
                     color="text.secondary"
-                    sx={{ fontWeight: "bold" }}
+                    sx={{ fontWeight: "bold", fontSize: 13 }}
                   ></Typography>
                   <br></br>
-                  <Typography variant="body2" color="text.secondary">
+                  <Typography
+                    variant="body2"
+                    color="text.secondary"
+                    sx={{ fontSize: 13 }}
+                  >
                     <Typography
                       variant="body2"
                       color="text.secondary"
@@ -116,13 +120,13 @@ const workExperience = () => {
                     >
                       Awards
                     </Typography>
-                    <ListItem sx={{ display: "list-item" }}>
+                    <ListItem sx={{ display: "list-item", fontSize: 13 }}>
                       Re-writting the code 2022
                     </ListItem>
-                    <ListItem sx={{ display: "list-item" }}>
+                    <ListItem sx={{ display: "list-item", fontSize: 13 }}>
                       Palantir Women in Technology 2020
                     </ListItem>
-                    <ListItem sx={{ display: "list-item" }}>
+                    <ListItem sx={{ display: "list-item", fontSize: 13 }}>
                       McGill MasterCard Scholarship 2018
                     </ListItem>
                     <Typography

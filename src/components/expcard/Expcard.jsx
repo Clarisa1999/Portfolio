@@ -32,18 +32,16 @@ export default function Expcard(props) {
               {props.heading}
             </Typography>
             <br></br>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" color="text.secondary" sx={{ fontSize: 13 }}>
               <ListItem sx={{ display: "list-item" }}>{props.pointOne}</ListItem>
               <ListItem sx={{ display: "list-item" }}>{props.pointTwo}</ListItem>
               <ListItem sx={{ display: "list-item" }}>{props.pointThree}</ListItem>
-              {/* <ListItem sx={{ display: "list-item" }}>{props.pointFour}</ListItem> */}
             </Typography>
           </CardContent>
           <LaunchIcon
             sx={{
               color: (theme) => (theme.palette.mode === "light" ? "#62eb31" : "white"),
               alignSelf: "flex-end",
-              // justifyContent: "flex-end",
               fontSize: 30,
             }}
           />

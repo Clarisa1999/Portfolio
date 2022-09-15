@@ -20,7 +20,7 @@ const LandingPage = () => {
         lineHeight: 1.7,
       }}
     >
-      <Stack sx={{ paddingTop: 8, paddingLeft: 8, flex: 0.73 }}>
+      <Stack sx={{ paddingLeft: 8, flex: 0.73 }}>
         <Typography variant="h5" color="text.primary">
           Hi there, my name is
         </Typography>
@@ -43,7 +43,6 @@ const LandingPage = () => {
         <Typography
           variant="body1"
           color="text.primary"
-          fontSize={18}
           width="74%"
           sx={{ paddingTop: 5 }}
         >

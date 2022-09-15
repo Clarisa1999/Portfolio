@@ -11,7 +11,7 @@ import FullPageScroll from "./FullPageScroll";
 /*Common Theme configuration for both dark and light mode */
 const commonTheme = {
   typography: {
-    fontSize: 17,
+    fontSize: 15,
     fontFamily: [
       "-apple-system",
       "BlinkMacSystemFont",

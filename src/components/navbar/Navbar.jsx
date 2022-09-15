@@ -25,7 +25,7 @@ const Navbar = (props) => {
       <IconButton
         color="secondary"
         onClick={toggleTheme}
-        sx={{ marginLeft: 2, marginRight: 2, marginTop: -1 }}
+        sx={{ marginLeft: 2, marginRight: 2, marginTop: -3 }}
       >
         {icon}
       </IconButton>
@@ -63,7 +63,7 @@ const Navbar = (props) => {
                 color="text"
                 sx={{ marginRight: 6, marginLeft: 6 }}
                 variant="h6"
-                fontSize={16}
+                fontSize={14}
               >
                 {item.title}
               </Typography>
