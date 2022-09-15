@@ -71,7 +71,7 @@ const Navbar = (props) => {
           );
         })}
 
-        <Link href="resume.pdf" underline="none" target="_blank">
+        <Link href="resume.pdf" underline="none" target="_blank" color="inherit">
           <Typography
             color="text"
             sx={{ marginRight: 6, marginLeft: 6 }}
