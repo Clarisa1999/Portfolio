@@ -76,7 +76,7 @@ const Navbar = (props) => {
             color="text.primary"
             sx={{ marginRight: 6, marginLeft: 6 }}
             variant="h6"
-            fontSize={16}
+            fontSize={14}
           >
             Download Resume
           </Typography>
