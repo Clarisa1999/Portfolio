@@ -73,7 +73,7 @@ const Navbar = (props) => {
 
         <Link href="resume.pdf" underline="none" target="_blank">
           <Typography
-            color="text.primary"
+            color="text"
             sx={{ marginRight: 6, marginLeft: 6 }}
             variant="h6"
             fontSize={14}
