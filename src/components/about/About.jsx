@@ -34,7 +34,7 @@ const About = () => {
           color="text.primary"
           sx={{ paddingTop: 1, lineHeight: 1.75 }}
         >
-          Hi, my name is Clarisa. I from Zimbabwe. I am currently a senior MasterCard
+          Hi, my name is Clarisa. I am from Zimbabwe. I am currently a senior MasterCard
           Scholar at McGill University Studying Computer Science and Physics. My interests
           in software development sparked in middle school when I first implemented an
           offline application to record voltage changes in one of my physics class

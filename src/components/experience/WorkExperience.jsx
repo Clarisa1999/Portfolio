@@ -152,7 +152,6 @@ const workExperience = () => {
                 />
               </CardActionArea>
             </Card>
-            s
           </Link>
         </Grid>
       </Grid>
