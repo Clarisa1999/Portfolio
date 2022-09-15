@@ -3,7 +3,7 @@ import React from "react";
 import { GitHub, YouTube } from "@mui/icons-material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-export default function contact() {
+export default function Contact() {
   return (
     <Box
       id="contact"

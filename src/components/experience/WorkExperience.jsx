@@ -32,7 +32,6 @@ const workExperience = () => {
         justifyContent="space-around"
         alignItems="center"
         spacing={6}
-        sx={{ marginTop: 3 }}
       >
         <Grid item xs={2.5}>
           <Link href="https://image.a11y.mcgill.ca/" target="_blank" underline="none">
