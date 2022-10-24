@@ -13,7 +13,6 @@ const About = () => {
         minWidth: "100%",
         height: "100vh",
         justifyContent: "center",
-        justifyContent: "space-evenly",
         background: (theme) => theme.palette.primary.main,
       }}
     >
