@@ -1,5 +1,3 @@
-import myImage from "../../media-files/myImage.JPG";
-
 export const menuItems = [
   {
     title: "About Me",

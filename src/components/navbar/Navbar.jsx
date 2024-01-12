@@ -4,23 +4,10 @@ import "./navbar.css";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { IconButton, Link, Typography, AppBar, Toolbar } from "@mui/material";
-import myImage from "../../media-files/myImage.JPG";
 import logo from "../../media-files/myLogo4.svg";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
 
 const Navbar = (props) => {
   const { theme, setTheme } = props;
-  const isWebView = useMediaQuery("(min-width:600px)");
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
 
   const toggleTheme = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
@@ -44,33 +31,6 @@ const Navbar = (props) => {
     );
   };
 
-  // const mobileNavBar = (
-  //   <>
-  //   <Button
-  //       id="basic-button"
-  //       aria-controls={open ? 'basic-menu' : undefined}
-  //       aria-haspopup="true"
-  //       aria-expanded={open ? 'true' : undefined}
-  //       onClick={handleClick}
-  //     >
-  //       Dashboard
-  //       </Button>
-  //   <Menu
-  //       id="basic-menu"
-  //       anchorEl={anchorEl}
-  //       open={open}
-  //       onClose={handleClose}
-  //       MenuListProps={{
-  //         'aria-labelledby': 'basic-button',
-  //       }}
-  //     >
-  //       <MenuItem onClick={handleClose}>Profile</MenuItem>
-  //       <MenuItem onClick={handleClose}>My account</MenuItem>
-  //       <MenuItem onClick={handleClose}>Logout</MenuItem>
-  //     </Menu>
-  //     </>
-  // )
-
   return (
     <AppBar
       position="sticky"
@@ -88,7 +48,7 @@ const Navbar = (props) => {
         <Link href="#landing" sx={{ flex: 1 }}>
           <img id="image" src={logo} height={50} width={200} />
         </Link>
-
+        {console.log("menu items ", menuItems, typeof menuItems)}
         {menuItems.map((item, index) => {
           return (
             <Link
@@ -109,7 +69,6 @@ const Navbar = (props) => {
             </Link>
           );
         })}
-
         <Link href="resume.pdf" underline="none" target="_blank" color="inherit">
           <Typography
             color="text"
@@ -120,7 +79,6 @@ const Navbar = (props) => {
             Download Resume
           </Typography>
         </Link>
-
         <ModeIcon theme={theme} />
       </div>
     </AppBar>

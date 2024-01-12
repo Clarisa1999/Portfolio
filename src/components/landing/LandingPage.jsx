@@ -47,8 +47,7 @@ const LandingPage = () => {
           sx={{ paddingTop: 5 }}
         >
           I am a software engineer passionate about crafting scalable front-end products
-          with great user experience that create a positive impact in the community! I am
-          currently looking for new-grad opportunities.
+          with great user experience that create a positive impact in the community!
         </Typography>
       </Stack>
       <Stack>

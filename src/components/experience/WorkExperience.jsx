@@ -4,13 +4,11 @@ import image from "../../media-files/image.png";
 import microsoft from "../../media-files/microsoft.png";
 import firewox from "../../media-files/firewox.png";
 import affiliations from "../../media-files/code.png";
-
+import amazon from "../../media-files/amazon.png";
 import Expcard from "../expcard/Expcard";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import List from "@mui/material";
-import CardActions from "@mui/material/CardActions";
 import LaunchIcon from "@mui/icons-material/Launch";
 import ListItem from "@mui/material/ListItem";
 
@@ -63,7 +61,7 @@ const workExperience = () => {
           </Link>
         </Grid>
 
-        <Grid item xs={2.5}>
+        {/* <Grid item xs={2.5}>
           <Link
             href="https://www.linkedin.com/company/firewox-technologies/about/"
             target="_blank"
@@ -72,20 +70,30 @@ const workExperience = () => {
             <Expcard
               image={firewox}
               companyName="Firewox Technologies Inc"
-              heading="Software Developer Intern    06/2020-08/2020"
+              heading="Software Developer Intern 06/2020-08/2020"
               pointOne="Used Java and Retrofit in Android Studio to retrieve IPV4 and IPV6 addresses of servers to an android application"
               pointTwo="Worked on the front-end of company’s website as well as the subscription plugins"
               pointThree="Parsed and rendered json data from the server into a readable format in the application"
             />
           </Link>
+        </Grid> */}
+
+        <Grid item xs={2.5}>
+          <Link href="https://aws.amazon.com/" target="_blank" underline="none">
+            <Expcard
+              image={amazon}
+              companyName="Amazon Web Services"
+              heading="Software Developer Intern    05/2023-07/2023"
+              pointOne="Developed a production-ready command-line tool in C and Rust within a 10-week timeframe, enabling users to analyze
+network packets through networking protocols."
+              pointTwo="Took part in implementing a robust load balancing tool for DynamoDB, harnessing the full potential of various AWS services
+such as EC2, S3, and Lambda."
+            />
+          </Link>
         </Grid>
 
         <Grid item xs={2.5}>
-          <Link
-            href="https://www.linkedin.com/company/firewox-technologies/about/"
-            target="_blank"
-            underline="none"
-          >
+          <Link target="_blank" underline="none">
             <Card
               sx={{
                 backgroundColor: (theme) => theme.palette.background.paper,

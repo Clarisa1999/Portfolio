@@ -83,7 +83,7 @@ export default function Contact() {
           ></GitHub>
         </Link>
 
-        <Link href="https://youtu.be/awDLuwGDcoI" target="_blank" underline="hover">
+        {/* <Link href="https://youtu.be/awDLuwGDcoI" target="_blank" underline="hover">
           <YouTube
             sx={{
               color: (theme) => (theme.palette.mode === "light" ? "red" : "white"),
@@ -91,7 +91,7 @@ export default function Contact() {
               fontSize: 60,
             }}
           ></YouTube>
-        </Link>
+        </Link> */}
       </Box>
     </Box>
   );
