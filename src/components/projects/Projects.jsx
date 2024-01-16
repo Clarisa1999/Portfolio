@@ -9,13 +9,12 @@ export default function Projects() {
     <Box
       id="projects"
       sx={{
-        minWidth: "100%",
-        height: "100vh",
         background: (theme) => theme.palette.primary.main,
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         alignContent: "center",
+        minHeight: "100vh",
       }}
     >
       <Box sx={{ width: "75%", alignSelf: "center" }}>

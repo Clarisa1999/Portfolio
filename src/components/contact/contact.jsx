@@ -8,13 +8,12 @@ export default function Contact() {
     <Box
       id="contact"
       sx={{
-        minWidth: "100%",
-        height: "100vh",
         background: (theme) => theme.palette.background.paper,
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
+        minHeight: "100vh",
       }}
     >
       <Box
