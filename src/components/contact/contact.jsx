@@ -1,97 +1,140 @@
-import { Box, Grid, Link, Typography } from "@mui/material";
-import React from "react";
-import { GitHub, YouTube } from "@mui/icons-material";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Box, Grid, Link, Stack } from "@mui/material";
+import { GitHub, Instagram, LinkedIn } from "@mui/icons-material";
+// import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-export default function Contact() {
+//export default function Contact() {
+
+import React, { useState } from "react";
+import { TextField, Button, Container, Typography } from "@mui/material";
+
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Add logic to handle form submission (e.g., send data to your server)
+
+    // For demonstration purposes, let's log the form data
+    console.log("Form Data:", formData);
+  };
+
   return (
     <Box
-      id="contact"
+      component="div"
       sx={{
-        background: (theme) => theme.palette.background.paper,
+        minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
         justifyContent: "center",
-        minHeight: "100vh",
+        alignItems: "center", // Center horizontally
+        background: (theme) => theme.palette.background.paper,
       }}
     >
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          width: "60%",
-          padding: 20,
-        }}
-      >
-        <Typography variant="h2" textAlign="center" color="text.primary">
-          I'd love to hear from you!
+      <Stack sx={{ maxWidth: "sm" }}>
+        <Typography variant="h4" align="center" gutterBottom sx={{ marginTop: "10%" }}>
+          Send me a message!
         </Typography>
-        <Typography variant="h5" textAlign="center" color="text.primary">
-          Got a project you would like me to work on? How about a friendly chat...
+        <Typography>
+          Have a question, proposal, or simply want to send a greeting? Feel free to reach
+          out!
         </Typography>
-      </Box>
-      <Box>
-        <Typography variant="h4" textAlign="center" color="text.primary">
-          Say Hello
-        </Typography>
-        <Link
-          href="mailto:rufaro.gapare@mail.mcgill.ca"
-          target="_blank"
-          underline="always"
-        >
-          <Typography
-            variant="h5"
-            textAlign="center"
-            color="text.paper"
-            sx={{ fontStyle: "italic" }}
+
+        <form onSubmit={handleSubmit}>
+          <TextField
+            label="Name"
+            variant="outlined"
+            fullWidth
+            margin="normal"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+          <TextField
+            label="Email"
+            variant="outlined"
+            fullWidth
+            margin="normal"
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+          <TextField
+            label="Message"
+            variant="outlined"
+            fullWidth
+            margin="normal"
+            multiline
+            rows={4}
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          />
+          <Button type="submit" variant="contained" color="primary" fullWidth>
+            Let's Chat
+          </Button>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: "150px",
+              paddingTop: "10%",
+            }}
           >
-            rufaro.gapare@mail.mcgill.ca
-          </Typography>
-        </Link>
-      </Box>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "flex-around",
-          alignItems: "flex-end",
-          gap: "150px",
-        }}
-      >
-        <Link
-          href="https://www.linkedin.com/in/rufaroclarisagapare/"
-          target="_blank"
-          underline="hover"
-        >
-          <LinkedInIcon
-            sx={{
-              color: (theme) => (theme.palette.mode === "light" ? "blue" : "white"),
-              display: "inline",
-              fontSize: 60,
-            }}
-          ></LinkedInIcon>
-        </Link>
+            <Link
+              href="https://www.linkedin.com/in/rufaroclarisagapare/"
+              target="_blank"
+              underline="hover"
+            >
+              <LinkedIn
+                sx={{
+                  color: (theme) => (theme.palette.mode === "light" ? "blue" : "white"),
+                  display: "inline",
+                  fontSize: 40,
+                }}
+              ></LinkedIn>
+            </Link>
 
-        <Link href="https://github.com/Clarisa1999" target="_blank" underline="hover">
-          <GitHub
-            sx={{
-              color: (theme) => (theme.palette.mode === "light" ? "black" : "white"),
-              display: "inline",
-              fontSize: 60,
-            }}
-          ></GitHub>
-        </Link>
+            <Link href="https://github.com/Clarisa1999" target="_blank" underline="hover">
+              <Instagram
+                sx={{
+                  color: (theme) =>
+                    theme.palette.mode === "light" ? "#d62976" : "white",
+                  display: "inline",
+                  fontSize: 40,
+                }}
+              ></Instagram>
+            </Link>
 
-        {/* <Link href="https://youtu.be/awDLuwGDcoI" target="_blank" underline="hover">
-          <YouTube
-            sx={{
-              color: (theme) => (theme.palette.mode === "light" ? "red" : "white"),
-              display: "inline",
-              fontSize: 60,
-            }}
-          ></YouTube>
-        </Link> */}
-      </Box>
+            <Link href="https://youtu.be/awDLuwGDcoI" target="_blank" underline="hover">
+              <GitHub
+                sx={{
+                  color: (theme) => (theme.palette.mode === "light" ? "black" : "white"),
+                  display: "inline",
+                  fontSize: 40,
+                }}
+              ></GitHub>
+            </Link>
+          </Box>
+        </form>
+      </Stack>
     </Box>
   );
-}
+};
+
+export default Contact;
