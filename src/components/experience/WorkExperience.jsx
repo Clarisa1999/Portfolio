@@ -233,10 +233,11 @@ such as EC2, S3, and Lambda."
                 link={"https://image.a11y.mcgill.ca/"}
                 companyName="McGill Image"
                 shouldExpand={true}
-                heading="Software Developer 09/2021-04/2022"
-                pointOne="Worked on the front-end of a web extension using vanilla Java Script and Constructed API-shemas"
-                pointTwo="Built the settings page of the web extension to allow users to save preferences"
-                pointThree="Communicated the flow and technicalities of the product with multi-disciplinary teams of engineers, designers, and clients"
+                heading="Software Developer Intern"
+                subHeading="09/2021-04/2022"
+                pointOne="Developed the front-end of a web extension using vanilla JavaScript, focusing on API schema construction."
+                pointTwo="Constructed the settings page, enabling users to save preferences within the web extension."
+                pointThree="Effectively communicated the product's flow and technical details to cross-functional teams, including engineers, designers, and clients."
               />
             </Grid>
 
@@ -246,10 +247,11 @@ such as EC2, S3, and Lambda."
                 shouldExpand={true}
                 link={"https://www.microsoft.com/en-us/about"}
                 companyName="Microsoft"
-                heading="Software Engineer Intern   05/2021-08/2021 "
-                pointOne="Worked on the front-end of a travel planner service for edge using Web Components, FAST, TypeScript, HTML, CSS"
-                pointTwo="Expanded and integrated APIs to the front-end of the application and fixed CORS to enable deployment of the APIs in different geolocations"
-                pointThree="Implemeted the search filters of the appplication to make travel planning more accesible to users"
+                heading="Software Engineer Intern"
+                subHeading="05/2021-08/2022"
+                pointOne="Developed a cutting-edge travel planner service, utilizing Web Components, FAST, TypeScript, HTML, and CSS."
+                pointTwo="Enhanced and seamlessly integrated APIs into the application, overcoming CORS challenges for versatile deployment across diverse geolocations."
+                pointThree="Revolutionized user experience by implementing intuitive search filters, making travel planning more accessible and user-friendly."
               />
             </Grid>
             <Grid item xs={12} sm={2.5}>
@@ -258,11 +260,13 @@ such as EC2, S3, and Lambda."
                 link={"https://aws.amazon.com/"}
                 shouldExpand={true}
                 companyName="Amazon"
-                heading="Software Developer Intern    05/2023-07/2023"
-                pointOne="Developed a production-ready command-line tool in C and Rust within a 10-week timeframe, enabling users to analyze
+                heading="Software Egnineer Intern"
+                subHeading=" 05/2023-07/2023"
+                pointOne="Developed a production-ready internal command-line tool in C and Rust within a 10-week timeframe, enabling users to analyze
 network packets through networking protocols."
                 pointTwo="Took part in implementing a robust load balancing tool for DynamoDB, harnessing the full potential of various AWS services
 such as EC2, S3, and Lambda."
+                pointThree="Captured and presented packet headers, enhancing network traffic examination, issue resolution, and data identification."
               />
             </Grid>
           </Grid>
@@ -282,7 +286,8 @@ such as EC2, S3, and Lambda."
                 companyName="Citi"
                 shouldExpand={true}
                 link={"https://icg.citi.com/icghome/what-we-do/citi-business-online"}
-                heading="Software Developer   07/2023-07/2024"
+                heading="Software Developer"
+                subHeading="07/2023-07/2024"
                 pointOne="Developed a production-ready command-line tool in C and Rust within a 10-week timeframe, enabling users to analyze
 network packets through networking protocols."
                 pointTwo="Took part in implementing a robust load balancing tool for DynamoDB, harnessing the full potential of various AWS services
@@ -294,7 +299,8 @@ such as EC2, S3, and Lambda."
                 image={amazon}
                 companyName="Amazon"
                 link="https://aws.amazon.com/"
-                heading="Software Development Engineer    09/2024"
+                heading="Software Development Engineer"
+                subHeading=" 09/2024"
                 shouldExpand={false}
               />
             </Grid>

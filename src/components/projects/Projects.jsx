@@ -17,11 +17,12 @@ export default function Projects() {
         minHeight: "100vh",
       }}
     >
-      <Box sx={{ width: "75%", alignSelf: "center" }}>
+      <Box sx={{ width: "75%", alignSelf: "center", justifyContent: "center" }}>
         <Typography
           gutterBottom
           variant="h4"
           color="text.primary"
+          textAlign={"center"}
           sx={{
             fontWeight: "bold",
             display: "flex",
@@ -31,14 +32,14 @@ export default function Projects() {
             paddingBottom: 5,
           }}
         >
-          Projects I have done...
+          Selected Projects...
         </Typography>
-        <Eachpro
+        {/* <Eachpro
           heading="McGill-spaces"
           body=" Currently, I am working on McGill-spaces. It is a web experience designed to promote interaction between various groups of students at McGill University. In this app, one can create an audio space where other students can join the conversation. This Idea was inspired
            by the live audio spaces section from Twitter spaces. This is a two people project being worked on a tech stack of React, Typescripte, Nodejs and Audio API's"
           link="https://github.com/saikz72/mcgill-spaces"
-        />
+        /> */}
         <Eachpro
           heading="Image"
           body="Image is an accessibility project which uses rich audio (sonification) together with the sense of touch (haptics) to provide a faster and more nuanced experience of graphics on the web. 

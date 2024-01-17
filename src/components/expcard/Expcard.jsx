@@ -44,7 +44,7 @@ export default function Expcard(props) {
         }}
       >
         <CardHeader title={props.companyName} />
-        <CardActionArea sx={{ displSay: "flex", flexDirection: "column" }}>
+        <CardActionArea>
           <CardMedia
             component="img"
             style={{
@@ -66,6 +66,13 @@ export default function Expcard(props) {
               sx={{ fontWeight: "bold" }}
             >
               {props.heading}
+            </Typography>
+            <Typography
+              variant="body3"
+              color="text.secondary"
+              sx={{ fontWeight: "bold" }}
+            >
+              {props.subHeading}
             </Typography>
             <div style={{ display: "flex", justifyContent: "space-between" }}>
               <div>

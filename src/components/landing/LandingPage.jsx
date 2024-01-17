@@ -25,7 +25,7 @@ const LandingPage = () => {
         >
           <Stack style={{ paddingLeft: "10%", marginTop: "15%" }}>
             <Typography variant="h6" color="text.primary">
-              Hi there, my name is
+              Hi there,Iam
             </Typography>
             <Typography
               variant="h4"
@@ -34,7 +34,7 @@ const LandingPage = () => {
             >
               Rufaro Clarisa Gapare
             </Typography>
-            <Typography
+            {/* <Typography
               variant="h4"
               sx={{
                 paddingTop: 5,
@@ -42,16 +42,18 @@ const LandingPage = () => {
               }}
             >
               I am a Front-end Developer....
-            </Typography>
+            </Typography> */}
             <Typography
               variant="body1"
               color="text.primary"
               // width="74%"
               sx={{ paddingTop: 5, width: "70%" }}
             >
-              I am a software engineer passionate about crafting scalable front-end
-              products with great user experience that create a positive impact in the
-              community!
+              a dedicated Front-end Developer with a passion for engineering scalable,
+              user-centric products. My mission is to create compelling front-end
+              solutions that not only deliver an exceptional user experience but also
+              leave a positive impact on the community. Welcome to my portfolio — where
+              innovation meets purpose!
             </Typography>
           </Stack>
           <Stack style={{ alignItems: "center", marginTop: "20px", marginBottom: "15%" }}>
@@ -64,6 +66,7 @@ const LandingPage = () => {
           id="landing"
           sx={{
             display: "flex",
+            alignItems: "center",
             minHeight: "100vh",
             background: (theme) =>
               theme.palette.mode === "light"
@@ -72,9 +75,9 @@ const LandingPage = () => {
             lineHeight: 1.7,
           }}
         >
-          <Stack sx={{ paddingLeft: 8, flex: 0.73, marginTop: "10%" }}>
+          <Stack sx={{ paddingLeft: 8, flex: 0.73 }}>
             <Typography variant="h5" color="text.primary">
-              Hi there, my name is
+              Hi there, I am
             </Typography>
             <Typography
               variant="h3"
@@ -83,7 +86,7 @@ const LandingPage = () => {
             >
               Rufaro Clarisa Gapare
             </Typography>
-            <Typography
+            {/* <Typography
               variant="h3"
               sx={{
                 paddingTop: 5,
@@ -91,19 +94,21 @@ const LandingPage = () => {
               }}
             >
               I am a Front-end Developer....
-            </Typography>
+            </Typography> */}
             <Typography
               variant="body1"
               color="text.primary"
               width="74%"
               sx={{ paddingTop: 5 }}
             >
-              I am a software engineer passionate about crafting scalable front-end
-              products with great user experience that create a positive impact in the
-              community!
+              a dedicated Front-end Developer with a passion for engineering scalable,
+              user-centric products. My mission is to create compelling front-end
+              solutions that not only deliver an exceptional user experience but also
+              leave a positive impact on the community. Welcome to my portfolio — where
+              innovation meets purpose!
             </Typography>
           </Stack>
-          <Stack sx={{ marginTop: "10%" }}>
+          <Stack sx={{}}>
             <img id="image" src={myImage} height={300} width={300} />
           </Stack>
         </Box>
