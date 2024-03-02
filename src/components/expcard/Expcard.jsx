@@ -8,7 +8,7 @@ import CardHeader from "@mui/material/CardHeader";
 import LaunchIcon from "@mui/icons-material/Launch";
 import ListItem from "@mui/material/ListItem";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import IconButton, { IconButtonProps } from "@mui/material/IconButton";
+import IconButton from "@mui/material/IconButton";
 import { styled } from "@mui/material/styles";
 import Collapse from "@mui/material/Collapse";
 import { Link } from "@mui/material";
