@@ -1,4 +1,4 @@
-import { Box, Link, Stack, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Link, Stack } from "@mui/material";
 import { GitHub, Instagram, LinkedIn } from "@mui/icons-material";
 // import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
