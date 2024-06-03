@@ -6,7 +6,6 @@ import Navbar from "./components/navbar/Navbar";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
-import FullPageScroll from "./FullPageScroll";
 
 /*Common Theme configuration for both dark and light mode */
 const commonTheme = {
