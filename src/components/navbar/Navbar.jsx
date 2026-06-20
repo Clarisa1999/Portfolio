@@ -64,15 +64,22 @@ const Navbar = (props) => {
   return (
     <>
       <AppBar
-        position="sticky"
+        position="fixed"
         enableColorOnDark={true}
         elevation={0}
         sx={{
           display: "flex",
+          backdropFilter: "blur(12px)",
           backgroundColor: (theme) =>
             theme.palette.mode === "light"
-              ? theme.palette.background.default
-              : theme.palette.background.default,
+              ? "rgba(209, 250, 229, 0.88)"
+              : "rgba(13, 59, 46, 0.88)",
+          borderBottom: (theme) =>
+            `1px solid ${
+              theme.palette.mode === "light"
+                ? "rgba(16, 185, 129, 0.2)"
+                : "rgba(52, 211, 153, 0.15)"
+            }`,
         }}
       >
         <div>
@@ -121,16 +128,6 @@ const Navbar = (props) => {
                   </Link>
                 );
               })}
-              <Link href="resume.pdf" underline="none" target="_blank" color="inherit">
-                <Typography
-                  color="text"
-                  sx={{ marginRight: 6, marginLeft: 6 }}
-                  variant="h6"
-                  fontSize={14}
-                >
-                  Download Resume
-                </Typography>
-              </Link>
               <ModeIcon theme={theme} />
             </div>
           )}
@@ -150,9 +147,6 @@ const Navbar = (props) => {
                 <ListItemText primary={item.title} />
               </ListItem>
             ))}
-            <ListItem button onClick={handleDrawerClose} component="a" href="resume.pdf">
-              <ListItemText primary="Download Resume" />
-            </ListItem>
           </List>
         </Drawer>
       )}

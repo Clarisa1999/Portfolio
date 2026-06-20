@@ -43,7 +43,7 @@ const WorkDesktop = () => {
         id="experience"
         minHeight="100vh"
         sx={{
-          background: (theme) => theme.palette.background.paper,
+          background: (theme) => theme.palette.background.default,
           display: "flex",
           flexDirection: "column",
         }}
@@ -51,106 +51,100 @@ const WorkDesktop = () => {
         <Grid
           container
           direction="row"
-          justifyContent="space-around"
-          alignItems="center"
-          spacing={3}
-          marginTop={"100px"}
-        >
-          <Grid item xs={12} sm={2.5}>
-            <Expcard
-              image={image}
-              link={"https://image.a11y.mcgill.ca/"}
-              companyName="McGill Image"
-              shouldExpand={true}
-              heading="Software Developer Intern"
-              subHeading="09/2021-04/2022"
-              pointOne="Developed the front-end of a web extension using vanilla JavaScript, focusing on API schema construction."
-              pointTwo="Constructed the settings page, enabling users to save preferences within the web extension."
-              pointThree="Effectively communicated the product's flow and technical details to cross-functional teams, including engineers, designers, and clients."
-            />
-          </Grid>
-
-          <Grid item xs={12} sm={2.5}>
-            <Expcard
-              image={microsoft}
-              shouldExpand={true}
-              link={"https://www.microsoft.com/en-us/about"}
-              companyName="Microsoft"
-              heading="Software Engineer Intern"
-              subHeading="05/2021-08/2022"
-              pointOne="Developed a cutting-edge travel planner service, utilizing Web Components, FAST, TypeScript, HTML, and CSS."
-              pointTwo="Enhanced and seamlessly integrated APIs into the application, overcoming CORS challenges for versatile deployment across diverse geolocations."
-              pointThree="Revolutionized user experience by implementing intuitive search filters, making travel planning more accessible and user-friendly."
-            />
-          </Grid>
-          <Grid item xs={12} sm={2.5}>
-            <Expcard
-              image={amazon}
-              link={"https://aws.amazon.com/"}
-              shouldExpand={true}
-              companyName="Amazon"
-              heading="Software Egnineer Intern"
-              subHeading=" 05/2023-07/2023"
-              pointOne="Developed a production-ready internal command-line tool in C and Rust within a 10-week timeframe, enabling users to analyze
-network packets through networking protocols."
-              pointTwo="Took part in implementing a robust load balancing tool for DynamoDB, harnessing the full potential of various AWS services
-such as EC2, S3, and Lambda."
-              pointThree="Captured and presented packet headers, enhancing network traffic examination, issue resolution, and data identification."
-            />
-          </Grid>
-        </Grid>
-
-        <Grid
-          container
-          direction="row"
-          justifyContent="space-around"
+          justifyContent="flex-start"
           alignItems="flex-start"
           spacing={3}
           marginTop={"100px"}
           marginBottom={"100px"}
         >
-          <Grid item xs={12} sm={2.5}>
+          <Grid item xs={12} sm={4} sx={{ display: "flex", justifyContent: "center" }}>
             <Expcard
-              image={citi}
-              companyName="Citi"
-              shouldExpand={true}
-              link={"https://icg.citi.com/icghome/what-we-do/citi-business-online"}
+              image={image}
+              link={"https://image.a11y.mcgill.ca/"}
+              companyName="McGill IMAGE"
               heading="Software Developer"
-              subHeading="07/2023-07/2024"
-              pointOne="Developed a production-ready command-line tool in C and Rust within a 10-week timeframe, enabling users to analyze
-network packets through networking protocols."
-              pointTwo="Took part in implementing a robust load balancing tool for DynamoDB, harnessing the full potential of various AWS services
-such as EC2, S3, and Lambda."
-            />
-          </Grid>
-          <Grid item xs={12} sm={2.5}>
-            <Expcard
-              image={amazon}
-              companyName="Amazon"
-              link="https://aws.amazon.com/"
-              heading="Software Development Engineer"
-              subHeading=" 09/2024"
-              shouldExpand={false}
+              subHeading="Sept 2021 – April 2022"
+              points={[
+                "Built a cross-browser settings page for an accessibility extension, enabling 500+ visually impaired users to customize haptics and spatialized audio (Vanilla JS, ES6+).",
+                "Collaborated with design and QA to deliver a seamless, accessible experience across Chrome, Firefox, and Edge.",
+              ]}
             />
           </Grid>
 
-          <Grid item xs={12} sm={2.5}>
+          <Grid item xs={12} sm={4} sx={{ display: "flex", justifyContent: "center" }}>
+            <Expcard
+              image={microsoft}
+              link={"https://www.microsoft.com/en-us/about"}
+              companyName="Microsoft"
+              heading="Software Engineer Intern"
+              subHeading="May 2021 – Aug 2021"
+              points={[
+                "Designed and shipped front-end features for Microsoft Edge Travel, enhancing the experience for 1k+ users.",
+                "Implemented filters and geospatial mapping, improving search relevance and user engagement.",
+                "Built a travel card details page, boosting interaction with travel recommendations.",
+              ]}
+            />
+          </Grid>
+          <Grid item xs={12} sm={4} sx={{ display: "flex", justifyContent: "center" }}>
+            <Expcard
+              image={citi}
+              companyName="Citi"
+              link={"https://icg.citi.com/icghome/what-we-do/citi-business-online"}
+              heading="Software Developer"
+              subHeading="July 2023 – July 2024"
+              points={[
+                "Enhanced CITI Business Online for 1M+ users by launching new transaction features (React, Redux, TypeScript).",
+                "Built internal tooling to centralize customer account management, cutting developer data-retrieval time by 60%.",
+                "Architected integration of front-end apps with backend services via REST APIs, improving transaction reliability and reducing authentication latency.",
+                "Wrote unit and integration tests with Jest, reducing production bugs and improving release reliability.",
+              ]}
+            />
+          </Grid>
+          <Grid item xs={12} sm={4} sx={{ display: "flex", justifyContent: "center" }}>
+            <Expcard
+              image={amazon}
+              link={"https://aws.amazon.com/"}
+              companyName="Amazon"
+              heading="Software Development Engineer"
+              subHeading="Sept 2024 – Feb 2026 · SWE Intern 2023"
+              points={[
+                "Engineered real-time metrics logging in C, Java, and Rust for a high-performance Network Load Balancer, enabling instant root-cause analysis at 1M+ packets/sec.",
+                "Designed and optimized components of a distributed system handling high-throughput TCP, UDP, and DNS traffic across multi-region deployments.",
+                "Revamped CI/CD pipelines, accelerating patching by 75% and ensuring 100% SLA compliance across global services.",
+                "Authored 6 technical design docs (4 implemented end-to-end) and mentored interns and junior engineers across design reviews.",
+              ]}
+            />
+          </Grid>
+          <Grid item xs={12} sm={4} sx={{ display: "flex", justifyContent: "center" }}>
             <Card
+              elevation={0}
               sx={{
                 backgroundColor: (theme) => theme.palette.background.paper,
-                width: "300px",
+                width: "230px",
+                borderRadius: 3,
+                boxShadow: "0 6px 24px rgba(0, 0, 0, 0.06)",
+                transition: "transform 0.25s ease, box-shadow 0.25s ease",
+                "&:hover": {
+                  transform: "translateY(-6px)",
+                  boxShadow: "0 14px 36px rgba(16, 185, 129, 0.18)",
+                },
               }}
             >
-              <CardHeader title="Affiliations" />
+              <CardHeader
+                title="Affiliations"
+                sx={{
+                  pb: 0,
+                  "& .MuiCardHeader-title": { fontSize: 15, fontWeight: 700 },
+                }}
+              />
               <CardActionArea>
                 <CardMedia
                   component="img"
                   style={{
-                    display: "flex",
-                    maxWidth: "200px",
-                    maxHeight: "150px",
+                    maxWidth: "120px",
+                    maxHeight: "90px",
                     display: "block",
-                    margin: "auto",
+                    margin: "8px auto",
                   }}
                   src={affiliations}
                 />
@@ -160,7 +154,6 @@ such as EC2, S3, and Lambda."
                     color="text.secondary"
                     sx={{ fontWeight: "bold", textAlign: "left" }}
                   >
-                    Affiliations
                   </Typography>
                   <div style={{ display: "flex", justifyContent: "space-between" }}>
                     <div>

@@ -3,7 +3,14 @@ import { menuItems } from "./menuItems";
 import "./navbar.css";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
-import { IconButton, Link, Typography, useMediaQuery, useTheme } from "@mui/material";
+import {
+  Button,
+  IconButton,
+  Link,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import logo from "../../media-files/myLogo4.svg";
 import { useState, useEffect } from "react";
 
@@ -74,16 +81,16 @@ const NavbarDesktop = (props) => {
           </Link>
         );
       })}
-      <Link href="resume.pdf" underline="none" target="_blank" color="inherit">
-        <Typography
-          color="text"
-          sx={{ marginRight: 6, marginLeft: 6 }}
-          variant="h6"
-          fontSize={14}
-        >
-          Download Resume
-        </Typography>
-      </Link>
+      <Button
+        href="RufaroClarisaGapareResume2026.pdf"
+        target="_blank"
+        variant="outlined"
+        color="primary"
+        size="small"
+        sx={{ mx: 4 }}
+      >
+        Download Resume
+      </Button>
       <ModeIcon theme={theme} />
     </div>
   );

@@ -1,5 +1,10 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Link, Typography } from "@mui/material";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import Reveal from "../common/Reveal";
+
+const DESIGN_DOCS_URL =
+  "https://drive.google.com/drive/folders/1l10lTLAYNw7AuKFjbeA8lDafCwRdlvyV?usp=sharing";
 
 const AboutDesktop = () => {
   return (
@@ -12,64 +17,67 @@ const AboutDesktop = () => {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          background: (theme) => theme.palette.primary.main,
+          background: (theme) => theme.palette.background.accent,
+          py: 12,
         }}
       >
-        <Box
-          width="45%"
-          sx={{
-            alignSelf: "flex-start",
-            justifyContent: "center",
-            marginLeft: "50px",
-            marginTop: "100px",
-          }}
-        >
+        <Reveal style={{ alignSelf: "flex-start", width: "45%", marginLeft: "56px" }}>
           <Typography variant="h3" color="text.primary">
             About me
           </Typography>
           <Typography
             variant="body2"
-            color="text.primary"
-            sx={{ paddingTop: 1, lineHeight: 1.75 }}
+            color="text.secondary"
+            sx={{ pt: 2, lineHeight: 1.8 }}
           >
-            Hailing from Zimbabwe, I embarked on my journey into the world of technology
-            by pursuing a dual degree in Computer Science and Physics at McGill University
-            in Canada, graduating in 2023. My fascination with software development dates
-            back to middle school, and today, I've translated that passion into a
-            fulfilling career in software engineering. Over the years, I've been fortunate
-            to intern with various companies, gaining extensive experience in full-stack
-            development and networking. My philosophy centers around building software
-            products that not only meet technical excellence but also make a positive
-            impact on the community. In addition to my professional endeavors, I am the
-            proud founder of CodeGaps, that provides mentorship to university students
-            accross the globe. This platform aims to guide students in discovering their
-            career paths in software development, delve into their first technical
-            projects, and prepare them for internship interviews.
+            I'm a Software Engineer who designs and operates distributed systems built to
+            stay reliable at scale. System design is the part I care most about — defining
+            clear architecture, data flows, capacity and failure modes, and the trade-offs
+            behind each decision before a line of code is written, then proving those
+            choices out in production. Since earning my B.Sc. in Computer Science and
+            Physics from McGill University in 2023, I've owned services end to end across
+            large-scale platforms, observability, CI/CD, and infrastructure automation —
+            from the design doc through deployment and on-call.
           </Typography>
-        </Box>
-        <Box
-          width="45%"
-          sx={{ alignSelf: "flex-end", marginRight: "60px", marginBottom: "100px" }}
+          <Link
+            href={DESIGN_DOCS_URL}
+            target="_blank"
+            rel="noopener"
+            underline="hover"
+            sx={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 0.5,
+              mt: 2.5,
+              fontWeight: 600,
+              color: "primary.main",
+            }}
+          >
+            Read a few of my design docs
+            <ArrowForwardIcon sx={{ fontSize: 18 }} />
+          </Link>
+        </Reveal>
+        <Reveal
+          delay={0.1}
+          style={{ alignSelf: "flex-end", width: "45%", marginRight: "64px", marginTop: "48px" }}
         >
           <Typography variant="h3" color="text.primary">
-            Over the past years...
+            Beyond the code
           </Typography>
           <Typography
             variant="body2"
-            color="text.primary"
-            sx={{ paddingTop: 1, lineHeight: 1.75 }}
+            color="text.secondary"
+            sx={{ pt: 2, lineHeight: 1.8 }}
           >
-            I've contributed to a diverse range of projects, from marketing websites to
-            enterprise apps, emphasizing fast, elegant, and accessible user experiences.
-            Proficient in Java, JavaScript, TypeScript, Web Components, OCaml, C, HTML,
-            CSS/SASS, Bash, FAST, Kotlin, Swift, and skilled in frameworks like React.js,
-            React Native, Node.js, and more, I bring a versatile toolkit to software
-            development. Engaging in hackathons and collaborative projects has honed my
-            problem-solving, communication, teamwork, time management, responsibility, and
-            empathy skills. Committed to innovation, I consistently deliver high-quality
-            solutions that make a meaningful impact.
+            My core toolkit spans Java, Python, TypeScript, and C, alongside modern cloud
+            and platform tooling. I'm drawn to distributed systems, platform engineering,
+            and developer experience — building the abstractions and automation that help
+            entire teams ship faster and more safely. Outside of my day-to-day, I founded
+            CodeGaps, a mentorship platform that helps students build real technical depth,
+            gain industry insight, and break into software engineering careers. I aim to
+            leave every system — and every engineer around it — better than I found it.
           </Typography>
-        </Box>
+        </Reveal>
       </Box>
     </>
   );

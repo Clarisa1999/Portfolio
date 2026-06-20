@@ -1,7 +1,9 @@
 import React from "react";
 import "./landingPage.css";
-import myImage from "../../media-files/myImage.JPG";
+import myImage from "../../media-files/Myimage2.jpg";
 import { Box, Stack, Typography } from "@mui/material";
+import Reveal from "../common/Reveal";
+import Parallax from "../common/Parallax";
 
 const LandingDesktop = () => {
   return (
@@ -13,48 +15,54 @@ const LandingDesktop = () => {
           display: "flex",
           alignItems: "center",
           minHeight: "100vh",
-          background: (theme) =>
-            theme.palette.mode === "light"
-              ? "linear-gradient(90deg, #e4f2f4 70%, #62eb31 30%)"
-              : theme.palette.background.paper,
+          background: (theme) => theme.palette.background.default,
           lineHeight: 1.7,
         }}
       >
-        <Stack sx={{ paddingLeft: 8, flex: 0.73 }}>
-          <Typography variant="h5" color="text.primary">
-            Hi there, I am
-          </Typography>
-          <Typography
-            variant="h3"
-            color="text.primary"
-            sx={{ paddingTop: 5, fontWeight: "bold" }}
-          >
-            Rufaro Clarisa Gapare
-          </Typography>
-          {/* <Typography
+        <Stack sx={{ pl: 8, flex: 0.73 }}>
+          <Reveal>
+            <Typography variant="h5" color="primary" sx={{ fontWeight: 600 }}>
+              Hi, I'm
+            </Typography>
+            <Typography
               variant="h3"
-              sx={{
-                paddingTop: 5,
-                color: (theme) => (theme.palette.mode === "light" ? "#62eb31" : "white"),
-              }}
+              color="text.primary"
+              sx={{ pt: 1, fontWeight: "bold" }}
             >
-              I am a Front-end Developer....
-            </Typography> */}
-          <Typography
-            variant="body1"
-            color="text.primary"
-            width="74%"
-            sx={{ paddingTop: 5 }}
-          >
-            a dedicated Front-end Developer with a passion for engineering scalable,
-            user-centric products. My mission is to create compelling front-end solutions
-            that not only deliver an exceptional user experience but also leave a positive
-            impact on the community. Welcome to my portfolio — where innovation meets
-            purpose!
-          </Typography>
+              Rufaro Clarisa Gapare
+            </Typography>
+            <Typography
+              variant="h6"
+              color="text.secondary"
+              sx={{ pt: 1, fontWeight: 400 }}
+            >
+              Software Engineer — distributed systems, cloud infrastructure &amp; backend services
+            </Typography>
+            <Typography
+              variant="body1"
+              color="text.secondary"
+              width="78%"
+              sx={{ pt: 3, lineHeight: 1.9 }}
+            >
+              I build reliable, scalable systems and the tools that keep them running. From
+              backend services and CI/CD pipelines to cloud-native applications and
+              observability — I turn complex engineering challenges into thoughtful,
+              high-impact solutions.
+            </Typography>
+          </Reveal>
         </Stack>
-        <Stack sx={{}}>
-          <img id="image" src={myImage} height={300} width={300} />
+        <Stack>
+          <Reveal delay={0.15} y={20}>
+            <Parallax offset={70}>
+              <img
+                className="landing-photo"
+                src={myImage}
+                height={320}
+                width={320}
+                alt="Rufaro Clarisa Gapare"
+              />
+            </Parallax>
+          </Reveal>
         </Stack>
       </Box>
     </>

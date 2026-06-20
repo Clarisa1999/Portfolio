@@ -4,6 +4,7 @@ import About from "./components/about/About";
 import WorkExperience from "./components/experience/WorkExperience";
 import Navbar from "./components/navbar/Navbar";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { Toolbar } from "@mui/material";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 
@@ -12,6 +13,7 @@ const commonTheme = {
   typography: {
     fontSize: 15,
     fontFamily: [
+      "Inter",
       "-apple-system",
       "BlinkMacSystemFont",
       '"Segoe UI"',
@@ -23,6 +25,34 @@ const commonTheme = {
       '"Segoe UI Emoji"',
       '"Segoe UI Symbol"',
     ].join(","),
+    h1: { fontFamily: '"Space Grotesk", sans-serif', fontWeight: 700, letterSpacing: "-1px" },
+    h2: { fontFamily: '"Space Grotesk", sans-serif', fontWeight: 700, letterSpacing: "-0.5px" },
+    h3: { fontFamily: '"Space Grotesk", sans-serif', fontWeight: 700, letterSpacing: "-0.5px" },
+    h4: { fontFamily: '"Space Grotesk", sans-serif', fontWeight: 600, letterSpacing: "-0.3px" },
+    h5: { fontFamily: '"Space Grotesk", sans-serif', fontWeight: 600 },
+    h6: { fontFamily: '"Space Grotesk", sans-serif', fontWeight: 600 },
+  },
+  shape: { borderRadius: 12 },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: "none",
+          borderRadius: 999,
+          fontWeight: 600,
+          paddingLeft: 22,
+          paddingRight: 22,
+          paddingTop: 8,
+          paddingBottom: 8,
+          boxShadow: "none",
+          transition: "transform 0.2s ease, box-shadow 0.2s ease",
+          "&:hover": {
+            boxShadow: "0 8px 20px rgba(16, 185, 129, 0.25)",
+            transform: "translateY(-2px)",
+          },
+        },
+      },
+    },
   },
 };
 
@@ -32,18 +62,21 @@ const lightTheme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: "#62eb31", //lime
+      main: "#10b981", //emerald accent
+      dark: "#059669",
     },
     secondary: {
-      main: "#e4f2f4", //background grey
+      main: "#0f766e", //deep teal
     },
     background: {
-      paper: "#ecfdff", //card grey
-      default: "#e4f2f4", //backgroungd grey
+      paper: "#ffffff", //cards
+      default: "#eef2f1", //soft neutral section tint
+      accent: "#d1fae5", //light emerald section tint
     },
     text: {
-      primary: "#4f4f4f", //text grey
-      paper: "#62eb31", //lime
+      primary: "#1f2937", //slate
+      secondary: "#4b5563",
+      paper: "#10b981", //emerald
       third: "#FFFFFF",
     },
   },
@@ -55,17 +88,20 @@ const darkTheme = createTheme({
   palette: {
     mode: "dark",
     primary: {
-      main: "#0B1A3F",
+      main: "#34d399", //emerald accent (lighter for dark bg)
+      dark: "#10b981",
     },
     secondary: {
-      main: "#fff",
+      main: "#5eead4", //teal
     },
     background: {
-      paper: "#001E3C",
-      default: "#0A1929",
+      paper: "#0f2942", //cards
+      default: "#0A1929", //section background
+      accent: "#0d3b2e", //dark emerald section tint
     },
     text: {
       primary: "#fff",
+      secondary: "#cbd5e1",
     },
   },
 });
@@ -76,6 +112,7 @@ const App = () => {
   return (
     <ThemeProvider theme={globalTheme}>
       <Navbar setTheme={setTheme} theme={theme} />
+      <Toolbar />
       <LandingPage />
       <About />
       <WorkExperience />

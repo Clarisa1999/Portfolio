@@ -1,22 +1,80 @@
-import { Box } from "@mui/system";
 import React from "react";
 import Typography from "@mui/material/Typography";
-import { Link } from "@mui/material";
+import { Box, Button, Card, CardContent, Chip, Stack } from "@mui/material";
+import LaunchIcon from "@mui/icons-material/Launch";
 
-export default function (props) {
+export default function Eachpro(props) {
+  const { heading, body, link, tech = [] } = props;
+
   return (
-    <Box sx={{ display: "flex", alignItems: "center", flexDirection: "column" }}>
-      <div style={{ maxWidth: "80%" }}>
-        <Link href={props.link} target="_blank" underline="always" color={"text.primary"}>
-          <Typography gutterBottom variant="h4" color="text.primary">
-            {props.heading}
-          </Typography>
-        </Link>
-
-        <Typography gutterBottom variant="body2" color="text.primary">
-          {props.body}
+    <Card
+      elevation={0}
+      sx={{
+        backgroundColor: (theme) => theme.palette.background.paper,
+        borderRadius: 3,
+        borderLeft: (theme) => `4px solid ${theme.palette.primary.main}`,
+        boxShadow: "0 6px 24px rgba(0, 0, 0, 0.06)",
+        transition: "transform 0.25s ease, box-shadow 0.25s ease",
+        "&:hover": {
+          transform: "translateY(-6px)",
+          boxShadow: "0 14px 36px rgba(16, 185, 129, 0.18)",
+        },
+      }}
+    >
+      <CardContent sx={{ p: { xs: 3, md: 4 } }}>
+        <Typography variant="h4" color="text.primary" sx={{ fontWeight: 700, mb: 1.5 }}>
+          {heading}
         </Typography>
-      </div>
-    </Box>
+
+        <Typography
+          variant="body2"
+          color="text.secondary"
+          sx={{ lineHeight: 1.8, mb: 2.5 }}
+        >
+          {body}
+        </Typography>
+
+        {tech.length > 0 && (
+          <Stack
+            direction="row"
+            spacing={1}
+            useFlexGap
+            flexWrap="wrap"
+            sx={{ mb: 3 }}
+          >
+            {tech.map((item) => (
+              <Chip
+                key={item}
+                label={item}
+                size="small"
+                variant="outlined"
+                sx={{
+                  fontWeight: 500,
+                  color: "primary.main",
+                  borderColor: "primary.main",
+                  backgroundColor: (theme) =>
+                    theme.palette.mode === "light"
+                      ? "rgba(16, 185, 129, 0.08)"
+                      : "rgba(52, 211, 153, 0.12)",
+                }}
+              />
+            ))}
+          </Stack>
+        )}
+
+        <Box>
+          <Button
+            href={link}
+            target="_blank"
+            rel="noopener"
+            variant="outlined"
+            color="primary"
+            endIcon={<LaunchIcon />}
+          >
+            View project
+          </Button>
+        </Box>
+      </CardContent>
+    </Card>
   );
 }
