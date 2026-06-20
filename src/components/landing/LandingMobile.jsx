@@ -19,27 +19,31 @@ const LandingMobile = () => {
       >
         <Stack sx={{ pl: "10%", mt: "15%" }}>
           <Reveal>
-            <Typography variant="h6" color="primary" sx={{ fontWeight: 600 }}>
+            <Typography
+              variant="h6"
+              color="primary"
+              sx={{ fontWeight: 600, fontSize: 14 }}
+            >
               Hi, I'm
             </Typography>
             <Typography
               variant="h4"
               color="text.primary"
-              sx={{ pt: 1, fontWeight: "bold" }}
+              sx={{ pt: 1, fontWeight: "bold", fontSize: "1.8rem" }}
             >
-              Rufaro Clarisa Gapare
+              Clarisa
             </Typography>
             <Typography
               variant="body2"
               color="text.secondary"
-              sx={{ pt: 1, fontWeight: 500, width: "80%" }}
+              sx={{ pt: 1, fontWeight: 500, width: "85%", fontSize: 13 }}
             >
               Software Engineer — distributed systems, cloud infrastructure &amp; backend services
             </Typography>
             <Typography
-              variant="body1"
+              variant="body2"
               color="text.secondary"
-              sx={{ pt: 3, width: "80%", lineHeight: 1.9 }}
+              sx={{ pt: 2.5, width: "85%", lineHeight: 1.8, fontSize: 13 }}
             >
               I build reliable, scalable systems and the tools that keep them running. From
               backend services and CI/CD pipelines to cloud-native applications and

@@ -40,7 +40,7 @@ export default function Projects() {
             gutterBottom
             variant="h4"
             color="text.primary"
-            sx={{ fontWeight: "bold", mb: 5 }}
+            sx={{ fontWeight: "bold", mb: 5, fontSize: { xs: "1.5rem", md: "2.125rem" } }}
           >
             Selected Projects
           </Typography>

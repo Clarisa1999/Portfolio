@@ -21,13 +21,17 @@ const AboutMobile = () => {
         }}
       >
         <Reveal style={{ width: "80%", marginLeft: "48px" }}>
-          <Typography variant="h3" color="text.primary">
+          <Typography
+            variant="h3"
+            color="text.primary"
+            sx={{ fontSize: "1.4rem" }}
+          >
             About me
           </Typography>
           <Typography
             variant="body2"
             color="text.secondary"
-            sx={{ pt: 2, lineHeight: 1.8 }}
+            sx={{ pt: 2, lineHeight: 1.8, fontSize: 13 }}
           >
             I'm a Software Engineer who designs and operates distributed systems built to
             stay reliable at scale. System design is the part I care most about — defining
@@ -49,21 +53,26 @@ const AboutMobile = () => {
               gap: 0.5,
               mt: 2.5,
               fontWeight: 600,
+              fontSize: 13,
               color: "primary.main",
             }}
           >
             Read a few of my design docs
-            <ArrowForwardIcon sx={{ fontSize: 18 }} />
+            <ArrowForwardIcon sx={{ fontSize: 16 }} />
           </Link>
         </Reveal>
         <Reveal delay={0.1} style={{ width: "80%", marginLeft: "48px", marginTop: "48px" }}>
-          <Typography variant="h3" color="text.primary">
+          <Typography
+            variant="h3"
+            color="text.primary"
+            sx={{ fontSize: "1.4rem" }}
+          >
             Beyond the code
           </Typography>
           <Typography
             variant="body2"
             color="text.secondary"
-            sx={{ pt: 2, lineHeight: 1.8 }}
+            sx={{ pt: 2, lineHeight: 1.8, fontSize: 13 }}
           >
             My core toolkit spans Java, Python, TypeScript, and C, alongside modern cloud
             and platform tooling. I'm drawn to distributed systems, platform engineering,

@@ -22,14 +22,18 @@ export default function Eachpro(props) {
       }}
     >
       <CardContent sx={{ p: { xs: 3, md: 4 } }}>
-        <Typography variant="h4" color="text.primary" sx={{ fontWeight: 700, mb: 1.5 }}>
+        <Typography
+          variant="h4"
+          color="text.primary"
+          sx={{ fontWeight: 700, mb: 1.5, fontSize: { xs: "1.3rem", md: "2.125rem" } }}
+        >
           {heading}
         </Typography>
 
         <Typography
           variant="body2"
           color="text.secondary"
-          sx={{ lineHeight: 1.8, mb: 2.5 }}
+          sx={{ lineHeight: 1.8, mb: 2.5, fontSize: { xs: 13, md: 14 } }}
         >
           {body}
         </Typography>

@@ -40,15 +40,15 @@ const ContactMobile = () => {
               background: "linear-gradient(135deg, #10b981 0%, #047857 100%)",
             }}
           >
-            <Typography variant="h5" sx={{ fontWeight: 700, mb: 1.5 }}>
+            <Typography sx={{ fontWeight: 700, mb: 1.5, fontSize: "1.4rem" }}>
               Let's connect
             </Typography>
-            <Typography sx={{ opacity: 0.92, lineHeight: 1.7, mb: 3, fontSize: 14 }}>
+            <Typography sx={{ opacity: 0.92, lineHeight: 1.7, mb: 3, fontSize: 13 }}>
               Have a question, a proposal, or simply want to say hello? Drop me a message.
             </Typography>
             <Stack direction="row" spacing={1.5} alignItems="center">
               <MailOutlineIcon fontSize="small" />
-              <Typography sx={{ fontWeight: 500, fontSize: 14 }}>
+              <Typography sx={{ fontWeight: 500, fontSize: 13 }}>
                 gaparerufaro@gmail.com
               </Typography>
             </Stack>
